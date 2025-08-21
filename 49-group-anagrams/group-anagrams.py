@@ -3,12 +3,12 @@ class Solution:
         dict = defaultdict(list)
 
         for word in strs:
-            ls = [0] * 26
-            for ch in word:
+            len = [0] * 26
 
+            for ch in word:
                 idx = ord(ch) - ord('a')
-                ls[idx] += 1
-            
-            dict[tuple(ls)].append(word)
+
+                len[idx]+= 1
+            dict[tuple(len)].append(word)
         return list(dict.values())
         
