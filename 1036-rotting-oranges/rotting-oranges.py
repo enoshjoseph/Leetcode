@@ -27,7 +27,7 @@ class Solution:
 
                         if fresh == 0:
                             return minitues
-                rotten = curr
+            rotten = curr
         if fresh == 0:
             return minitues
         else:
