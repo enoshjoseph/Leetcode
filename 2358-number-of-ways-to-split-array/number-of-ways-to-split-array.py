@@ -5,7 +5,7 @@ class Solution:
         count = 0
         for i in range(len(nums)-1):
             leftSum +=  nums[i]
-            rightSum =  totalSum - leftSum
-            if leftSum >= rightSum:
+            
+            if leftSum >= totalSum-leftSum:
                 count += 1
         return count
