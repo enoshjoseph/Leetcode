@@ -1,6 +1,9 @@
 class Solution:
     def removeTrailingZeros(self, num: str) -> str:
-        return num.rstrip("0")
+        i = len(num) - 1
+        while num[i] == "0" and num[i - 1]:
+            i -= 1
+        return num[:i+1]
 
 
         
